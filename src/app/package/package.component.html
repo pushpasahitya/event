@@ -1,0 +1,67 @@
+<div class="service" id="service">
+
+   <h1 class="heading"> our <span>services</span> </h1>
+
+   <div class="box-container">
+
+       <div class="box" >
+           <i class="fas fa-map-marker-alt"></i>
+           <h3 (click)="show()" class="ok">venue selection</h3>
+           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro, suscipit.</p>
+           <div *ngIf="isShow"  >
+            <h4  *ngFor="let user of users" >
+                {{user.id}}
+                {{user.venueselection}}
+               </h4>
+           </div>  
+           
+       </div>
+
+       
+
+       <div class="box">
+           <i class="fas fa-envelope"></i>
+           <h3 (click)="show1()" class="ok">invitation card</h3>
+           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro, suscipit.</p>
+           <div *ngIf="isShow1"  >
+            <h4  *ngFor="let use of me" >
+                {{use.id}}
+                {{use.invitationcards}}
+               </h4>
+           </div> 
+       </div>
+
+       <div class="box">
+           <i class="fas fa-music"></i>
+           <h3 (click)="show2()" class="ok">entertainment</h3>
+           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro, suscipit.</p>
+           <div *ngIf="isShow2"  >
+            <h4  *ngFor="let use of you" >
+                {{use.id}}
+                {{use.entertainment}}
+               </h4>
+            </div>
+       </div>
+
+       <div class="box">
+           <i class="fas fa-utensils"></i>
+           <h3 (click)="show3()" class="ok">foods</h3>
+           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro, suscipit.</p>
+
+           <div *ngIf="isShow3"  >
+            <h4  *ngFor="let use of you" >
+                {{use.id}}
+                {{use.foodlist}}
+               </h4>
+              </div>
+       </div>
+
+     
+
+
+       </div>
+
+</div>
+
+
+
